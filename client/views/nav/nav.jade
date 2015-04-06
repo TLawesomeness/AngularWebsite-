@@ -1,0 +1,15 @@
+nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#navbar")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(ui-sref='home')
+    #navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li: a(class='navbar-brand' ui-sref='home'): i.fa.fa-home &nbsp; Home
+        li: a(class='navbar-brand' ui-sref='about'): i.fa.fa-info &nbsp; About
+        li: a(class='navbar-brand' ui-sref='portfolio'): i.fa.fa-archive &nbsp; Portfolio
+        li: a(class='navbar-brand' ui-sref='blog'): i.fa.fa-newspaper-o &nbsp; Blog

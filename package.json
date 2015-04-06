@@ -1,0 +1,51 @@
+{
+  "name": "angular-website",
+  "description": "Angular Prototype Application",
+  "homepage": "https://github.com/coding-house-jan2015/angular-prototype",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "keywords": [
+    "gulp",
+    "jshint",
+    "jscs",
+    "server",
+    "hapi",
+    "node",
+    "mongo",
+    "mongoose",
+    "angular"
+  ],
+  "author": "Tommy Luo <tluo12321@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coding-house-jan2015/angular-prototype.git"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server/index.js",
+    "localhost": "PORT=3333 nodemon -e js,jade server/index.js",
+    "preinstall": "rm -rf node_modules public",
+    "postinstall": "bower install && gulp build"
+
+  },
+  "license": "MIT",
+  "dependencies": {
+    "good": "^5.1.2",
+    "good-console": "^4.1.0",
+    "hapi": "^8.4.0"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.0.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-copy": "0.0.2",
+    "gulp-jade": "^1.0.0",
+    "gulp-jshint": "^1.10.0",
+    "gulp-less": "^3.0.2",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-watch": "^4.2.3",
+    "jshint-stylish": "^1.0.1"
+  }
+}
