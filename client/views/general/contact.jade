@@ -1,0 +1,45 @@
+#contact 
+  //-Modal
+  #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog
+      .modal-content
+        form.form-horizontal
+          .modal-header
+            h4#myModalLabel.modal-title Contact Tommy
+          .modal-body
+            .form-group
+              label.col-lg-2.control-label(for='contact-name') Name:
+              .col-lg-10
+                input#contact-name.form-control(type='text', placeholder='Full Name')
+            .form-group
+              label.col-lg-2.control-label(for='contact-email') Email:
+              .col-lg-10
+                input#contact-email.form-control(type='email', placeholder='you@example.com')
+            .form-group
+              label.col-lg-2.control-label(for='contact-msg') Message:
+              .col-lg-10
+                textarea.form-control(rows='8')
+      .modal-footer
+        a.btn.btn-default(data-dismiss='modal') Close
+        button.btn.btn-primary(type='submit') Send message
+//- div(ng-controller='ModalDemoCtrl')
+//-   script(type='text/ng-template', id='myModalContent.html').
+//-     <div class="modal-header">
+//-     <h3 class="modal-title">I'm a modal!</h3>
+//-     </div>
+//-     <div class="modal-body">
+//-     <ul>
+//-     <li ng-repeat="item in items">
+//-     <a ng-click="selected.item = item">{{ item }}</a>
+//-     </li>
+//-     </ul>
+//-     Selected: <b>{{ selected.item }}</b>
+//-     </div>
+//-     <div class="modal-footer">
+//-     <button class="btn btn-primary" ng-click="ok()">OK</button>
+//-     <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+//-     </div>
+//-   button.btn.btn-default(ng-click='open()') Open me!
+//-   button.btn.btn-default(ng-click="open('lg')") Large modal
+//-   button.btn.btn-default(ng-click="open('sm')") Small modal
+//-   div(ng-show='selected') Selection from a modal: {{ selected }}
