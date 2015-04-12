@@ -1,20 +1,28 @@
-#contact 
-  //- .modal-header
-  h3#myModalLabel.modal-title Contact Tommy
-  .modal-body
-    .form-group
-      label.col-lg-2.control-label(for='contact-name') Name:
-      .col-lg-10
-        input#contact-name.form-control(type='text', placeholder='Full Name')
-    .form-group
-      label.col-lg-2.control-label(for='contact-email') Email:
-      .col-lg-10
-        input#contact-email.form-control(type='email', placeholder='you@example.com')
-    .form-group
-      label.col-lg-2.control-label(for='contact-msg') Message:
-      .col-lg-10
-        textarea.form-control(rows='8')
-    //- .modal-footer
-    .btnfooter
-      //- a.btn.btn-default(data-dismiss='modal') Close
-      button.btn.btn-primary(type='submit') Send message
+#msg
+  h1#infoMsg Currently under construction
+
+
+
+#myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      form.form-horizontal
+        .modal-header
+          h4#myModalLabel.modal-title Contact Tommy
+          p#modalmsg Currently not working, please contact through email or LinkedIn
+        .modal-body
+          .form-group
+            label.col-lg-2.control-label(for='contact-name') Name:
+            .col-lg-10
+              input#contact-name.form-control(type='text', placeholder='Full Name')
+          .form-group
+            label.col-lg-2.control-label(for='contact-email') Email:
+            .col-lg-10
+              input#contact-email.form-control(type='email', placeholder='you@example.com')
+          .form-group
+            label.col-lg-2.control-label(for='contact-msg') Message:
+            .col-lg-10
+              textarea.form-control(rows='8')
+    .modal-footer
+      a.btn.btn-default.modalBtn(data-dismiss='modal') Close
+      button.btn.btn-primary.modalBtn(type='submit') Send message

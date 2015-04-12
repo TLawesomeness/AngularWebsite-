@@ -8,6 +8,6 @@ angular.module('myWeb', ['ui.router', 'ngMessages'])
       .state('home', {url:'/', templateUrl:'/views/general/home.html', controller: 'HomeCtrl'})
       .state('about', {url:'/about', templateUrl:'/views/general/about.html'})
       .state('portfolio', {url:'/portfolio', templateUrl:'/views/general/portfolio.html', controller: 'PortfolioCtrl'})
-      .state('blog', {url:'/blog', templateUrl:'/views/general/blog.html'})
+      .state('blog', {url:'/blog', templateUrl:'/views/general/blog.html', controller: 'BlogCtrl'})
       .state('contact', {url:'/contact', templateUrl:'/views/general/contact.html'});
   }]);
